@@ -21,4 +21,6 @@ SOURCES += main.cpp \
 HEADERS += \
     13_3.h \
     13_4.h \
-    13_5.h
+    13_5.h \
+    13_6.h \
+    13_7.h
