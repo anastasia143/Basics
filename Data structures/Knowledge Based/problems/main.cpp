@@ -1,9 +1,9 @@
 #include <iostream>
-#include "13_3.h"
+#include "13_6.h"
 
 int main()
 {
-	test();
+	test2();
 
 	return 0;
 }
