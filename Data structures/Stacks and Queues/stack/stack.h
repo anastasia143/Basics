@@ -2,6 +2,11 @@
 #include <cstddef>
 #include <iostream>
 
+/** Stack is a LIFO data structure. The term LIFO stems from the fact that, using these operations,
+ * each element "popped off" a stack in series of pushes and pops is the last (most recent) element
+ * that was "pushed into" within the sequence.
+**/
+
 using namespace std;
 
 template <typename T>
