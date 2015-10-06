@@ -27,8 +27,9 @@ public:
 	Stack();
 	~Stack();
 	void push(T value);
-	void pop();
+	T pop();
 	T top();
+	int getSize() { return size;}
 
 	void print();
 private:
@@ -66,8 +67,9 @@ Stack<T>::~Stack()
 }
 
 template <typename T>
-void Stack<T>::pop()
+T Stack<T>::pop()
 {
+	T value = root->value;
 	if (size == 1) {
 		delete root;
 		root = NULL;
@@ -77,6 +79,7 @@ void Stack<T>::pop()
 		root = temp;
 	}
 	size--;
+	return value;
 }
 
 template <typename T>

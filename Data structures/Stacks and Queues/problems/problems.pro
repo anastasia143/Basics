@@ -21,4 +21,5 @@ HEADERS += \
     3_1.h \
     3_2.h \
     3_2_2.h \
-    stack.h
+    stack.h \
+    3_3.h
