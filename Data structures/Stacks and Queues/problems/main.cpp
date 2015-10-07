@@ -4,9 +4,11 @@
 #include "3_3.h"
 #include "3_6.h"
 #include "3_5.h"
+#include "3_4.h"
 
 int main()
 {
+	test();
 	/*StackWithMin2<int> stack;
 	stack.push(5);
 	cout << stack.getMin() << endl;
@@ -24,7 +26,7 @@ int main()
 	Stack<int>* stack = sort(stack2);
 	stack->print();*/
 
-	MyQueue* queue = new MyQueue;
+	/*MyQueue* queue = new MyQueue;
 	queue->enqueue(6);
 	queue->enqueue(8);
 	queue->enqueue(11);
@@ -33,7 +35,7 @@ int main()
 	queue->enqueue(100);
 	queue->enqueue(12452);
 	for (int i = 0;i < 7;i++)
-		cout << queue->dequeue() << " ";
+		cout << queue->dequeue() << " ";*/
 
 
 	return 0;
