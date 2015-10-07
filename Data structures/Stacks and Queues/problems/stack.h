@@ -30,6 +30,7 @@ public:
 	T pop();
 	T top();
 	int getSize() { return size;}
+	bool isEmpty();
 
 	void print();
 private:
@@ -96,4 +97,10 @@ void Stack<T>::print()
 		cout << node->value << " ";
 		node = node->next;
 	}
+}
+
+template <typename T>
+bool Stack<T>::isEmpty()
+{
+	return (size == 0);
 }
