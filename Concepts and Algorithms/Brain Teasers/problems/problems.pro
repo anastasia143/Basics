@@ -19,4 +19,5 @@ SOURCES += main.cpp
 
 HEADERS += \
     6_1.h \
-    6_2.h
+    6_2.h \
+    6_3.h
