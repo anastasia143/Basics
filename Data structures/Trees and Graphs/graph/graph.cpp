@@ -29,9 +29,7 @@ Graph::Graph()
 Graph::~Graph()
 {
 	for (int i = 0; i < vertexCount; i++)
-	{
 		delete[] arr[i];
-	}
 	delete[] arr;
 }
 
@@ -83,6 +81,5 @@ void Graph::breadthFirstSearchHelper(queue<int>* &vertexQueue, bool* &label)
 			}
 		}
 	}
-
 }
 

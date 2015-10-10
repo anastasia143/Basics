@@ -37,6 +37,7 @@ Remove edge              O(|E|)               O(1)        O(|V|*|E|)
 Query: are vertices      O(|V|)               O(1)            O(|E|)
 x and y adjacent?
 */
+
 class Graph
 {
 public:
