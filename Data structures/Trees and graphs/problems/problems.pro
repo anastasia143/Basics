@@ -8,6 +8,8 @@ QT       += core
 
 QT       -= gui
 
+QMAKE_CXXFLAGS += -std=c++11
+
 TARGET = problems
 CONFIG   += console
 CONFIG   -= app_bundle
@@ -26,4 +28,6 @@ HEADERS += \
     4_3.h \
     4_5.h \
     4_6.h \
-    4_2.h
+    4_2.h \
+    4_4.h \
+    treenode.h

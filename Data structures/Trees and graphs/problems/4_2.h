@@ -54,7 +54,7 @@ public:
 		bool* label = new bool[vertexCount];
 		for (int i = 0; i < vertexCount; i++)
 			label[i] = false;
-		return depthFirstSearchCheckHelper(start, end,  label);
+		return depthFirstSearchCheckHelper(start, end, label);
 		delete[] label;
 	}
 
