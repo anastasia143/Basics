@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <set>
+#include <queue>
 #include "treeNode.h"
 using namespace std;
 
@@ -41,10 +43,15 @@ Print functions that use defferent tree traversals
 	void inOrder();
 	void postOrder();
 
+	void depthFirstSearch();
+	void breadthFirstSearch();
+
 protected:
 	int count;
 
 private:
+	void depthFirstSearchHelper(TreeNode<T>* vertex);
+	void breadthFirstSearchHelper(queue<TreeNode<T> >* &vertexQueue);
 	TreeNode<T>* root;
 
 /**
@@ -256,4 +263,43 @@ template <typename T>
 Tree<T>::~Tree()
 {
 	deleteTree(root);
+}
+
+template <typename T>
+void Tree<T>::depthFirstSearch()
+{
+	depthFirstSearchHelper(root);
+}
+
+template <typename T>
+void Tree<T>::depthFirstSearchHelper(TreeNode<T>* vertex)
+{
+	if (vertex == NULL)
+		return;
+	cout << vertex->value << " ";
+	depthFirstSearchHelper(vertex->left);
+	depthFirstSearchHelper(vertex->right);
+}
+
+template <typename T>
+void Tree<T>::breadthFirstSearch()
+{
+	queue<TreeNode<T> >* vertexQueue = new queue<TreeNode<T> >;
+	vertexQueue->push(*root);
+	breadthFirstSearchHelper(vertexQueue);
+	delete vertexQueue;
+}
+
+template <typename T>
+void Tree<T>::breadthFirstSearchHelper(queue<TreeNode<T> >* &vertexQueue)
+{
+	while (!vertexQueue->empty()) {
+		TreeNode<T> vertex = vertexQueue->front();
+		vertexQueue->pop();
+		cout << vertex.value << " ";
+		if (vertex.left != NULL)
+			vertexQueue->push(*vertex.left);
+		if (vertex.right != NULL)
+			vertexQueue->push(*vertex.right);
+	}
 }
