@@ -18,4 +18,5 @@ TEMPLATE = app
 SOURCES += main.cpp
 
 HEADERS += \
-    1_1.h
+    1_1.h \
+    1_2.h
