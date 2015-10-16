@@ -11,7 +11,7 @@
  * For each character, check if it is a duplicate of already found characters. O(n^2)
  *
  * Approach 2: With Additional Memory of Constant Size
- * Ascii buffer
+ * Ascii buffer O(n)
  *
  * Test Cases:
 1. String does not contain any duplicates, e.g.: abcd
