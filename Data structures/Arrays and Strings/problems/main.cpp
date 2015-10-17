@@ -4,6 +4,7 @@
 #include "1_3.h"
 #include "1_4.h"
 #include "1_5.h"
+#include "1_7.h"
 using namespace std;
 
 int main()
@@ -15,6 +16,8 @@ int main()
 
 	char str[100] = "aaa df ";
 	replaceSpaces(str);
-	cout << str;
+	cout << str << endl;
+
+	setZeros();
 	return 0;
 }
