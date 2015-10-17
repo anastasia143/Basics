@@ -5,6 +5,7 @@
 #include "1_4.h"
 #include "1_5.h"
 #include "1_7.h"
+#include "1_8.h"
 using namespace std;
 
 int main()
