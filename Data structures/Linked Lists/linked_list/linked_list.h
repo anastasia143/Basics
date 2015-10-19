@@ -3,6 +3,15 @@
 
 using namespace std;
 
+/** Linked List is an abstract data type that represents an ordered sequence of values,
+ * where the same value may occur more than once.
+ *          average | worst
+ * add        O(1)     O(1)
+ * remove     O(n)     O(n)
+ * check      O(n)     O(n)
+ * index      O(n)     O(n)
+**/
+
 template <typename T>
 struct Node
 {
