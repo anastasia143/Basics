@@ -34,4 +34,24 @@ bool deleteNode(Node<T>* node) {
 	return true;
 }
 
+void test() {
+	Node<int>* temp3 = new Node<int>(2);
+	temp3->next = NULL;
+
+	Node<int>* temp2 = new Node<int>(3);
+	temp2->next = temp3;
+
+	Node<int>* temp = new Node<int>(4);
+	temp->value = 4;
+	temp->next = temp2;
+
+	deleteNode(temp2);
+
+	Node<int>* pemp = temp;
+	while (temp != NULL) {
+		cout << pemp->value << " ";
+		pemp = pemp->next;
+	}
+}
+
 
