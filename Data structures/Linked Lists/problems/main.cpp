@@ -1,35 +1,25 @@
 #include <iostream>
-#include "2_3.h"
+#include "2_4.h"
 
 using namespace std;
 
 int main()
 {
-	/*LinkedList<int> list;
-	cout << "g";
-	list.add(5);
-	list.add(3);
-	list.add(4);
-	list.add(7);
-	cout << list.nthintoLast(4);
-	cout << list.nthintoLast(3);*/
+	LinkedList<int>* list = new LinkedList<int>;
+	list->add(3);
+	list->add(1);
+	list->add(5);
 
-	Node<int>* temp3 = new Node<int>(2);
-	temp3->next = NULL;
+	LinkedList<int>* list2 = new LinkedList<int>;
+	list2->add(5);
+	list2->add(9);
+	list2->add(2);
+	list2->add(7);
 
-	Node<int>* temp2 = new Node<int>(3);
-	temp2->next = temp3;
+	addition(list, list2)->print();
 
-	Node<int>* temp = new Node<int>(4);
-	temp->value = 4;
-	temp->next = temp2;
+	delete list;
+	delete list2;
 
-	deleteNode(temp2);
-
-	Node<int>* pemp = temp;
-	while (temp != NULL) {
-		cout << pemp->value << " ";
-		pemp = pemp->next;
-	}
 	return 0;
 }
