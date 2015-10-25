@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void sort(int* A, int* B, int n, int m);
+void sortToA(int* A, int* B, int n, int m);
 
 void test()
 {
