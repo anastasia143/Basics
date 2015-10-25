@@ -1,11 +1,11 @@
 #include <iostream>
-#include "2_4.h"
+#include "2_5.h"
 
 using namespace std;
 
 int main()
 {
-	LinkedList<int>* list = new LinkedList<int>;
+	/*LinkedList<int>* list = new LinkedList<int>;
 	list->add(3);
 	list->add(1);
 	list->add(5);
@@ -19,7 +19,7 @@ int main()
 	addition(list, list2)->print();
 
 	delete list;
-	delete list2;
+	delete list2*/;
 
 	return 0;
 }
