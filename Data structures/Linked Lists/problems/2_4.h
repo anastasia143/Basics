@@ -32,6 +32,7 @@ public:
 	~LinkedList();
 	void add(T value);
 	Node<T>* getRoot() { return root; }
+	bool isEmpty() {return size == 0; }
 
 	void print();
 private:
@@ -83,6 +84,10 @@ void LinkedList<T>::print()
 LinkedList<int>* addition(LinkedList<int>* num1, LinkedList<int>* num2) {
 	LinkedList<int>* res = new LinkedList<int>;
 
+	if (num1->isEmpty() || num2->isEmpty()) {
+		return res;
+	}
+
 	Node<int>* temp1 = num1->getRoot();
 	Node<int>* temp2 = num2->getRoot();
 
@@ -103,6 +108,7 @@ LinkedList<int>* addition(LinkedList<int>* num1, LinkedList<int>* num2) {
 
 	if (temp1 != NULL) {
 		res->add(temp1->value + rest);
+		temp1 = temp1->next;
 		while (temp1 != NULL) {
 			res->add(temp1->value);
 			temp1 = temp1->next;
@@ -110,6 +116,7 @@ LinkedList<int>* addition(LinkedList<int>* num1, LinkedList<int>* num2) {
 	}
 	else if (temp2 != NULL) {
 		res->add(temp2->value + rest);
+		temp2 = temp2->next;
 		while (temp2 != NULL) {
 			res->add(temp2->value);
 			temp2 = temp2->next;
