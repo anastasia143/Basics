@@ -20,4 +20,5 @@ SOURCES += main.cpp
 HEADERS += \
     9_1.h \
     9_2.h \
-    9_3.h
+    9_3.h \
+    9_4.h
