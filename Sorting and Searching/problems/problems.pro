@@ -8,6 +8,8 @@ QT       += core
 
 QT       -= gui
 
+QMAKE_CXXFLAGS += -std=c++11
+
 TARGET = problems
 CONFIG   += console
 CONFIG   -= app_bundle
@@ -22,4 +24,5 @@ HEADERS += \
     9_2.h \
     9_3.h \
     9_4.h \
+	9_5.h \
 	9_6.h
