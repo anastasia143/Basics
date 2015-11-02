@@ -6,6 +6,7 @@
 #include "heap_sort.h"
 #include "bubble_sort.h"
 #include "insert_sort.h"
+#include "selection_sort.h"
 
 using namespace std;
 
@@ -19,7 +20,7 @@ int main()
 		cout << array[i] << " ";
 	}
 
-	insert_sort(size, array);
+	selection_sort(size, array);
 
 	cout << endl;
 
