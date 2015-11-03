@@ -16,9 +16,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    graph.cpp
+    graph.cpp \
+    graph2.cpp
 
 HEADERS += \
-    graph.h
+    graph.h \
+    graph2.h
 
 DISTFILES +=
