@@ -1,10 +1,10 @@
 #include <iostream>
 #include "8_1.h"
 #include "8_3.h"
+#include "8_5.h"
 
 int main()
 {
-	vector<int> vec = {1,2,3};
-	vector<vector<int> > multiset = findMultiset(vec);
+	brackets(3);
 	return 0;
 }

@@ -21,4 +21,5 @@ SOURCES += main.cpp
 
 HEADERS += \
     8_1.h \
-    8_3.h
+    8_3.h \
+    8_5.h
