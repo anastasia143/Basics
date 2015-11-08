@@ -2,6 +2,7 @@
 #include "8_1.h"
 #include "8_3.h"
 #include "8_5.h"
+#include "8_6.h"
 #include "8_7.h"
 
 int main()
