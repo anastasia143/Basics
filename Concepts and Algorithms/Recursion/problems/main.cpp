@@ -1,5 +1,6 @@
 #include <iostream>
 #include "8_1.h"
+#include "8_2.h"
 #include "8_3.h"
 #include "8_4.h"
 #include "8_5.h"
