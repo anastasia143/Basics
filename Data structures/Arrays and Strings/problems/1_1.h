@@ -37,7 +37,7 @@ bool isUniqueChars2(char* str, int len)
 		int asciiCode = (int) str[i];
 		if ((checker & (1 << asciiCode)) > 0)
 			return false;
-		checker = checker | (1 << checker);
+		checker = checker | (1 << asciiCode);
 	}
 	return true;
 }
