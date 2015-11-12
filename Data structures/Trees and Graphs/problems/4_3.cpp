@@ -11,7 +11,7 @@ void createMinimalBstFromArray(Tree<int>* tree, int* arr, int a, int b)
 	if (a < b)
 		return;
 	int middle = (a + b) / 2;
-	tree->add(middle);
+	tree->add(arr[middle]);
 	createMinimalBstFromArray(tree, arr, a, middle - 1);
 	createMinimalBstFromArray(tree, arr, middle + 1, b);
 }
